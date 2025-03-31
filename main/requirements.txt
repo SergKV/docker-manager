@@ -1,0 +1,9 @@
+# For production
+argparse==1.4.0
+
+# For development/testing
+pytest==7.4.0
+pytest-mock==3.11.1
+
+flask==2.0.1
+gunicorn==20.1.0  # For production deployment

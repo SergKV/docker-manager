@@ -1,0 +1,13 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+    {% include "partials/status_card.html" %}
+{% endblock %}
+
+{% block extra_js %}
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new DockerManagerUI();
+        });
+    </script>
+{% endblock %}

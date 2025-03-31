@@ -1,0 +1,20 @@
+<div class="card shadow-sm">
+    <div class="card-body">
+        <div id="status-container" class="mb-4">
+            <div class="d-flex align-items-center">
+                <div class="spinner-border text-primary me-3" role="status" id="status-spinner">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <div>
+                    <h4 id="status-message">Checking Docker status...</h4>
+                    <div id="version-info" class="mt-1"></div>
+                    <div id="os-info" class="text-muted small mt-1"></div>
+                    <div id="last-updated" class="last-updated"></div>
+                </div>
+            </div>
+        </div>
+        
+        {% include "partials/buttons.html" %}
+        {% include "partials/alerts.html" %}
+    </div>
+</div>

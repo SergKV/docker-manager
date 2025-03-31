@@ -1,0 +1,67 @@
+/* Main layout styles */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Card styles */
+.card {
+    max-width: 800px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Status indicator styles */
+.status-icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+#version-info {
+    font-family: monospace;
+    background: #f8f9fa;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.last-updated {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+/* Heartbeat animation */
+#heartbeat-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; transform: scale(0.95); }
+    50% { opacity: 1; transform: scale(1.05); }
+    100% { opacity: 0.5; transform: scale(0.95); }
+}
+
+/* Button group styles */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .btn-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .form-check {
+        margin-top: 10px;
+    }
+}
